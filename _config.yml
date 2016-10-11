@@ -17,7 +17,7 @@ title: The Taper
 email: bcb4y@virginia.edu
 description: > # this means to ignore newlines until "baseurl:"
   A blog about Legal things in the library.
-baseurl: "/thetaper" # the subpath of your site, e.g. /blog
+baseurl: "/tapertest" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 
 # Build settings
