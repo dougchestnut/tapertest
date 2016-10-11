@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <script>
+      //Polymer = {dom: 'shadow'};
+
+      (function() {
+        if ('registerElement' in document
+            && 'import' in document.createElement('link')
+            && 'content' in document.createElement('template')) {
+          // platform is good!
+        } else {
+          document.write( '<script src="//static.lib.virginia.edu/bower_components/webcomponentsjs/webcomponents-lite.min.js">\x3C/script>')
+        }
+      })();
+    </script>
+
+    <!--<link rel="import" href="//static.lib.virginia.edu/bower_components/uvalib-page/uvalib-homepage.html">-->
+    <link rel="import" href="//static.lib.virginia.edu/bower_components/uvalib-page/uvalib-homepage.vulcanized.html">
+    <link rel="import" href="//static.lib.virginia.edu/bower_components/uvalib-theme/uvalib-blog-theme.html">
+
+  <body>
+
+    <uvalib-page>
+        {{ content }}
+    </uvalib-page>
+
+  </body>
+
+</html>
